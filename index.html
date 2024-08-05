@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Perguntas sobre Horta Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo de Perguntas sobre Horta Inteligente</h1>
+    </header>
+    <main>
+        <div class="container">
+            <img src="horta-inteligente.jpg" alt="Horta Inteligente" class="horta-image">
+            <div id="game" class="game">
+                <h2>Perguntas sobre Horta Inteligente</h2>
+                <p id="question">Qual dessas práticas é importante em uma horta inteligente?</p>
+                <div id="options" class="options">
+                    <button onclick="checkAnswer(false)">Regar apenas de manhã cedo</button>
+                    <button onclick="checkAnswer(true)">Usar sensores para monitorar a umidade do solo</button>
+                    <button onclick="checkAnswer(false)">Usar pesticidas químicos regularmente</button>
+                    <button onclick="checkAnswer(false)">Ignorar a compostagem</button>
+                </div>
+                <p id="result" class="result"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Horta Inteligente. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
